@@ -12,6 +12,12 @@ body {
     font-style: normal;
     color: var(--main-text);
 }
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+   
+}
 
 ul {
     list-style: none;
@@ -20,6 +26,13 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+ul,h1,h2,h6,p,h3,button{
+    padding:0;
+    margin:0;
+}
+.header{
+    padding: 24px 0 25px;
 }
 
 .header-logo-web {
@@ -64,39 +77,53 @@ a {
     letter-spacing: 0.28px;
     word-wrap: break-word;
 }
+.hero{
+    padding: 200px 0;
+}
 
-.section-slogan-title {
+.hero_title {
     color: var(--white-text);
     font-size: 44px;
-    
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.36;
     letter-spacing: 2.64px;
     word-wrap: break-word;
+    margin: 0 0 30px;
+    text-align: center;
 }
 
-.section-slogan-btn {
+.hero_btn {
     color: var(--white-text);
     font-size: 16px;
-    
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
     word-wrap: break-word;
+    background-color: #2196F3;
+    border-radius: 4px;
+    width: 216px;
+height: 50px;
+margin: 0 auto;
+display:block;
+}
+.feature{
+    padding: 94px 0;
 }
 
-.section-feature-title {
+.feature-title {
     color: var(--gray-text);
     font-size: 14px;
-    
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.42px;
     word-wrap: break-word;
+    margin-bottom: 10px;
 }
 
-.section-feature-text {
+
+
+.feature-text {
 
     font-size: 14px;
     
@@ -105,32 +132,54 @@ a {
     letter-spacing: 0.42px;
     word-wrap: break-word;
 }
+.box{
+    padding-bottom:94px;  
+}
+.box-title{
+    margin-bottom: 50px;
+    color: #212121;
+text-align: center;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+letter-spacing: 1.08px;
+}
 
-.section-box-title,
-.section-team-title {
+
+.team{
+    padding:94px 0 ;
+}
+
+.team-title {
     color: var(--gray-text);
     font-size: 36px;
     
     font-weight: 700;
     letter-spacing: 1.08px;
     word-wrap: break-word;
+    margin-bottom: 50px;
 }
 
-.section-team-item-title {
+.team-item-title {
     color: var(--gray-text);
     font-size: 16px;
     
     font-weight: 500;
     letter-spacing: 0.48px;
     word-wrap: break-word;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.section-team-text {
+.team-text {
     font-size: 16px;
     
     font-weight: 400;
     letter-spacing: 0.48px;
     word-wrap: break-word;
+}
+.footer{
+    padding: 60px 0;
 }
 
 .footer-logo-web {
@@ -140,6 +189,7 @@ a {
     font-weight: 700;
     letter-spacing: 0.78px;
     word-wrap: break-word;
+    margin-bottom: 20px;
 }
 
 .footer-logo-studio {
@@ -153,7 +203,7 @@ a {
 
 
 .footer-text {
-    color: var(--blue-text);
+    color: var(--white-text);
     font-size: 14px;
     
     font-weight: 400;
@@ -171,38 +221,7 @@ a {
     letter-spacing: 0.42px;
     word-wrap: break-word;
 }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section:first-child,
+.hero,
 footer {
     background-color: #2F303A;
-}
-
-section:first-child button {
-    background-color: #2196F3;
-    color: #FFFFFF;
 }
