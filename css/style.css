@@ -3,6 +3,7 @@
     --gray-text: #212121;
     --blue-text: #2196F3;
     --white-text: #ffffff;
+    --team-bg: #F5F4FA;
 }
 
 body {
@@ -31,8 +32,40 @@ ul,h1,h2,h6,p,h3,button{
     padding:0;
     margin:0;
 }
+.header .container {
+    display: flex;
+    justify-content:space-between;
+    align-items:  center ;
+}
 .header{
     padding: 24px 0 25px;
+}
+.header-block{
+    display: flex;
+    justify-content:space-between;
+    width: 518px;
+    align-items: center;
+}
+.feature-list{
+    display:flex;
+    gap: 30px;
+}
+.box-list{
+    display: flex;
+    justify-content: space-around;
+}
+.team-list{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navigation-list{
+    display: flex;
+    gap: 50px;
+}
+.contact-list{
+        display: flex;
+        gap: 50px;
 }
 
 .header-logo-web {
@@ -91,6 +124,8 @@ ul,h1,h2,h6,p,h3,button{
     word-wrap: break-word;
     margin: 0 0 30px;
     text-align: center;
+    width: 696px;
+    margin: 0 auto 30px;
 }
 
 .hero_btn {
@@ -148,6 +183,11 @@ letter-spacing: 1.08px;
 
 .team{
     padding:94px 0 ;
+    background-color: var(--team-bg);
+}
+.team-list-item{
+    background-color:var(--white-text);
+    padding-bottom: ;
 }
 
 .team-title {
@@ -158,6 +198,7 @@ letter-spacing: 1.08px;
     letter-spacing: 1.08px;
     word-wrap: break-word;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .team-item-title {
@@ -190,6 +231,9 @@ letter-spacing: 1.08px;
     letter-spacing: 0.78px;
     word-wrap: break-word;
     margin-bottom: 20px;
+    margin-bottom:20px ;
+    display: block;
+    
 }
 
 .footer-logo-studio {
@@ -199,6 +243,12 @@ letter-spacing: 1.08px;
     font-weight: 700;
     letter-spacing: 0.78px;
     word-wrap: break-word;
+}
+address{
+    font-style:normal;
+    display: flex;
+    flex-direction: column;
+    gap:9px;
 }
 
 
@@ -215,7 +265,6 @@ letter-spacing: 1.08px;
 .footer-contact {
     color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
-    
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
