@@ -193,9 +193,13 @@ footer {
 }
 
 .portfolio-list-item {
-    border: #EEEEEE 1px solid;
+    border: 1px solid #EEE;
+    background-color: #FFF;
     flex-basis: calc((100% - 60px) / 3);
+    padding bottom: ;: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .portfolio-img {
     width: 100%;
@@ -219,4 +223,5 @@ footer {
     line-height: 1.875;
     letter-spacing: 3%;
     color: var(--main-text);
+    padding left: 20px;
 }
