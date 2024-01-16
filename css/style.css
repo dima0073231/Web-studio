@@ -49,6 +49,7 @@ ul,h1,h2,h6,p,h3,button{
 .feature-list{
     display:flex;
     gap: 30px;
+    
 }
 .box-list{
     display: flex;
@@ -57,6 +58,7 @@ ul,h1,h2,h6,p,h3,button{
 .team-list{
     display: flex;
     justify-content: space-around;
+    text-align: center;
     
 }
 .navigation-list{
@@ -155,9 +157,35 @@ display:block;
     word-wrap: break-word;
     margin-bottom: 10px;
 }
+.feature-list-item::before{
+     content: "";
+        display: inline-block; 
+        width: 270px; 
+        height: 120px; 
+        border-radius: 4px;
+        background-color:#F5F4FA;
+        background-repeat:   no-repeat ; 
+        background-position: center;
+        margin-bottom: 30px; 
 
-
-
+    
+}
+.feature-list-item:nth-child(1)::before{
+   background-image: url(../images/antenna1.png);
+    
+}
+.feature-list-item:nth-child(2)::before{
+    background-image: url(../images/clock1.png);
+     
+ }
+ .feature-list-item:nth-child(3)::before{
+    background-image: url(../images/diagram1.png);
+     
+ }
+ .feature-list-item:nth-child(4)::before{
+    background-image: url(../images/astronaut1.png);
+     
+ }
 .feature-text {
 
     font-size: 14px;
@@ -187,13 +215,12 @@ letter-spacing: 1.08px;
 }
 .team-list-item{
     background-color:var(--white-text);
-    padding-bottom:    
+    padding-bottom:k;   
 }
 
 .team-title {
     color: var(--gray-text);
     font-size: 36px;
-    
     font-weight: 700;
     letter-spacing: 1.08px;
     word-wrap: break-word;
