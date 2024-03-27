@@ -145,6 +145,28 @@ address{
     flex-direction: column;
     gap:9px;
 }
+.conect-list{
+    display: flex;
+    padding-left: 390px;
+    margin-top: -130px;
+}
+.social-text{
+    display: block;
+    padding-left: 400px;
+    position: relative;
+    top: -125px;
+    color: var(--white-text);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    word-wrap:break-word;
+    margin-bottom: 20px;
+}
+.social-img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
 footer {
     background-color: #2F303A;
 }
@@ -180,7 +202,7 @@ footer {
 
 .portfolio-filters-btn:hover {
     background-color: var(--blue-back);
-    color: #FFF;
+    color: #2196F3;
     box-shadow: 0 3px rgba(50, 50, 50, 0.3);
 }
 
@@ -226,7 +248,7 @@ footer {
     padding-left: 20px;
 }
 .card::before {
-    content: ""; /* Обов'язковий параметр для відображення псевдоелементу */
+    content: ""; 
     display: block; 
     width: 50px; 
     height: 50px; 

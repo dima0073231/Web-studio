@@ -70,6 +70,12 @@ ul,h1,h2,h6,p,h3,button{
         gap: 50px;
 }
 
+.contact-link:hover{
+    background-color: var(--blue-back);
+    color: #2196F3;
+}
+
+
 .header-logo-link {
     color:var(--blue-text);
     font-size: 26px;
@@ -107,7 +113,6 @@ ul,h1,h2,h6,p,h3,button{
 .contact-block {
 
     font-size: 14px;
-    
     font-weight: 500;
     letter-spacing: 0.28px;
     word-wrap: break-word;
@@ -218,7 +223,11 @@ letter-spacing: 1.08px;
 }
 .team-list-item{
     background-color:var(--white-text);
-    padding-bottom:k;   
+    padding-bottom:100;
+   background-repeat: no-repeat;
+   height: 430px;
+   border-radius: 5px;
+   margin-right: 30px;
 }
 
 .team-title {
@@ -230,25 +239,66 @@ letter-spacing: 1.08px;
     margin-bottom: 50px;
     text-align: center;
 }
+.social-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px; 
+}
+.conect-list{
+    display: flex;
+    padding-left: 390px;
+    margin-top: -140px;
+}
+.social-text{
+    display: block;
+    padding-left: 400px;
+    position: relative;
+    top: -140px;
+    color: var(--white-text);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    word-wrap:break-word;
+    margin-bottom: 20px;
+}
+.social-img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
 
 .team-item-title {
     color: var(--gray-text);
     font-size: 16px;
-    
     font-weight: 500;
     letter-spacing: 0.48px;
     word-wrap: break-word;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-top: 30px;
+}
+.team-contact{
+    padding-right:175px;
+    padding-top: 15px;
 }
 
 .team-text {
     font-size: 16px;
-    
-    font-weight: 400;
+ font-weight: 400;
     letter-spacing: 0.48px;
     word-wrap: break-word;
 }
+.team-img{
+    display: inline;
+}
+.company{
+    padding: 94px 0;
+}
+.company-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
 .footer{
     padding: 60px 0;
 }
@@ -261,7 +311,6 @@ letter-spacing: 1.08px;
     letter-spacing: 0.78px;
     word-wrap: break-word;
     margin-bottom: 20px;
-    margin-bottom:20px ;
     display: block;
     
 }
@@ -279,6 +328,9 @@ address{
     display: flex;
     flex-direction: column;
     gap:9px;
+}
+.social-img{
+    justify-content: space-around;
 }
 
 
