@@ -47,12 +47,18 @@
             <div class="contact-block">
                 <ul class="contact-list">
                     <li class="contact-list-item">
+                        
+                        <svg class="contact-img" width="16px" height="12px">
+                            <use href="./images/symboldefs.svg#email"></use>
+                        </svg>
                         <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
-                        <img src="./images/SVG/email.svg" alt="email" class="contact-img">
                     </li>
                     <li class="contact-list-item">
+                        
+                        <svg class="contact-img" width="15px" height="15px">
+                            <use href="./images/symboldefs.svg#nummer"></use>
+                        </svg>
                         <a href="tel:380961111111" class="contact-link">+380961111111</a>
-                        <img src="./images/SVG/phone.svg" alt="phone" class="contact-img">
                     </li>
                 </ul>
             </div>
@@ -63,10 +69,55 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero_btn">Замовити послугу</button>
-            </div>
+                <button type="button" class="hero_btn" data-modal-open>Замовити послугу</button>
+            <div class="backdrop is-hidden"data-modal>
+                <form class="modal">
+                    <button class="div-modal-bth-close"data-modal-close>
+                        <svg class="div-modal-svg-close">
+                            <use href="./images/symboldefs.svg#close"></use>
+                        </svg>
+                    </button>
+                <h3 class="modal-title">Залишате свої дані, ми вам перезвонимо</h3>
+                <ul class="modal-list">
+                    <li class="modal-list-item">
+                        <label for="name" class="modal-list-name">Ім'я
+                        <input type="name" class="modal-list-input">
+                        <svg class="modal-svg">
+                            <use href="./images/symboldefs.svg#name"></use>
+                        </svg>
+                    </label>
+                    </li>
+                        <li class="modal-list-item">
+                            <label for="phone" class="modal-list-name">Телефон
+                            <input type="phone" class="modal-list-input">
+                            <svg class="modal-svg">
+                                <use href="./images/symboldefs.svg#phone"></use>
+                            </svg>
+                        </label>
+                                <li class="modal-list-item">
+                                    <label for="email" class="modal-list-name">Пошта
+                                    <input type="email" class="modal-list-input">
+                                    <svg class="modal-svg">
+                                        <use href="./images/symboldefs.svg#emaill"></use>
+                                    </svg>
+                                </label>
+                                    <li class="modal-list-item">
+                                        <label for="com" class="modal-list-label">Коментар
+                                        <textarea name="text" id="comment" placeholder="Введіть текст" class="modal-textarea"></textarea>
+                                    </label>
+                                    </li>
+                                </ul>
+                               <p class="div-modal-text">
+                                        <input type="checkbox" class="div-modal-check">Погоджуюся з россилкою та приймаю 
+                                        <a href="#" class="div-modal-link">Умови договору</a>
+                                        
+                                    </p>
+                                    <button type="submit" class="div-modal-bth-sbm">Відправити</button>
+                                
+                                </form>
+                            </div>
+                    </div> 
         </section>
-
         <section class="feature">
             <div class="container">
                 <ul class="feature-list">
@@ -127,17 +178,25 @@
                             Product Designer
                         </p>
                         <ul class="social-list">
-                            <li> 
-                                <img src="./images/SVG/instagram.svg" alt="instagram" width="54" class="team-img">
-                             </li>
                             <li>
-                                <img src="./images/SVG/twitter.svg" alt="twitter" width="30" height="54px" class="team-img">
+                            <svg class="team-img" >
+                                    <use href="./images/symboldefs.svg#instagram"></use>
+                                </svg>
+                                </li>
+                                <li>
+                                <svg class="team-img" >
+                                    <use href="./images/symboldefs.svg#twitter"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/facebook.svg" alt="facebook" width="54" height="54"class="team-img">
+                                <svg class="team-img" >
+                                    <use href="./images/symboldefs.svg#facebook"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/in.svg" alt="in" width="54" height="54"class="team-img">
+                                <svg class="team-img">
+                                    <use href="./images/symboldefs.svg#in"></use>
+                                </svg>
                             </li>
                          </ul>
                     </li>
@@ -151,16 +210,24 @@
                         </p>
                         <ul class="social-list">
                             <li> 
-                                <img src="./images/SVG/instagram.svg" alt="instagram" width="54" class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#instagram"></use>
+                                </svg>
                              </li>
                             <li>
-                                <img src="./images/SVG/twitter.svg" alt="twitter" width="30" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#twitter"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/facebook.svg" alt="facebook" width="54" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#facebook"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/in.svg" alt="in" width="54" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#in"></use>
+                                </svg>
                             </li>
                          </ul>
                         
@@ -175,16 +242,24 @@
                         </p>
                         <ul class="social-list">
                             <li> 
-                                <img src="./images/SVG/instagram.svg" alt="instagram" width="50" class="team-img">
+                                <svg class="team-img" width="20" height="20">
+                                    <use href="./images/symboldefs.svg#instagram"></use>
+                                </svg>
                              </li>
                             <li>
-                                <img src="./images/SVG/twitter.svg" alt="twitter" width="30" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#twitter"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/facebook.svg" alt="facebook" width="54" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#facebook"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/in.svg" alt="in" width="54" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#in"></use>
+                                </svg>
                             </li>
                          </ul>
                     </li>
@@ -198,16 +273,24 @@
                         </p>
                         <ul class="social-list">
                             <li> 
-                                <img src="./images/SVG/instagram.svg" alt="instagram" width="54" class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#instagram"></use>
+                                </svg>
                              </li>
                             <li>
-                                <img src="./images/SVG/twitter.svg" alt="twitter" width="30" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#twitter"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/facebook.svg" alt="facebook" width="54" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#facebook"></use>
+                                </svg>
                             </li>
                             <li>
-                                <img src="./images/SVG/in.svg" alt="in" width="54" height="54"class="team-img">
+                                <svg class="team-img" width="54">
+                                    <use href="./images/symboldefs.svg#in"></use>
+                                </svg>
                             </li>
                          </ul>
                     </li>
@@ -219,22 +302,34 @@
             <h3 class="team-title">Постійні кліенти</h3>
             <ul class="company-list">
                 <li class="company-list-item">
-                    <img src="./images/SVG/yo.svg" alt="yo and co" class="company-box-img">
+                    <svg class="company-box-img" width="54px" >
+                        <use href="./images/symboldefs.svg#yaco"></use>
+                    </svg>
                 </li>
                 <li class="company-list-item">
-                    <img src="./images/SVG/company.svg" alt="company" class="company-box-img">
+                    <svg class="company-box-img" width="54px">
+                        <use href="./images/symboldefs.svg#company1"></use>
+                    </svg>
                 </li>
                 <li class="company-list-item">
-                    <img src="./images/SVG/comp.svg" alt="comp" class="company-box-img">
+                    <svg class="company-box-img" width="54px">
+                        <use href="./images/symboldefs.svg#company2"></use>
+                    </svg>
                 </li>
                 <li class="company-list-item">
-                    <img src="./images/SVG/foster.svg" alt="foster" class="company-box-img">
+                    <svg class="company-box-img" width="54px">
+                        <use href="./images/symboldefs.svg#foster"></use>
+                    </svg>
                 </li>
                 <li class="company-list-item">
-                    <img src="./images/SVG/brand.svg" alt="brand" class="company-box-img">
+                    <svg class="company-box-img"width="54px">
+                        <use href="./images/symboldefs.svg#brand"></use>
+                    </svg>
                 </li>
                 <li class="company-list-item">
-                    <img src="./images/SVG/compp.svg" alt="compp" class="company-box-img">
+                    <svg class="company-box-img"width="54px">
+                        <use href="./images/symboldefs.svg#company3"></use>
+                    </svg>
                 </li>
             </ul>
         </div>
@@ -259,21 +354,30 @@
             <p class="social-text">приєднуйтесь</p>
             <ul class="conect-list">
                 <li> 
-                    <img src="./images/SVG/instagram.svg" alt="instagram" class="social-img">
+                    <svg class="social-img">
+                        <use href="./images/symboldefs.svg#instagram"></use>
+                    </svg>
+
                  </li>
                 <li>
-                    <img src="./images/SVG/twitter.svg" alt="twitter" width="40px" class="social-img">
+                    <svg class="social-img">
+                        <use href="./images/symboldefs.svg#twitter"></use>
+                    </svg> 
                 </li>
                 <li>
-                    <img src="./images/SVG/facebook.svg" alt="facebook" class="social-img">
+                    <svg class="social-img">
+                        <use href="./images/symboldefs.svg#facebook"></use>
+                    </svg>
                 </li>
                 <li>
-                    <img src="./images/SVG/in.svg" alt="in" class="social-img">
+                    <svg class="social-img">
+                        <use href="./images/symboldefs.svg#in"></use>
+                    </svg>
                 </li>
              </ul>
             </div>
         </div>
     </footer>
+    <script src="./modal.js"></script>  
 </body>
-
 </html>
