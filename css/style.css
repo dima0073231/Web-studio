@@ -282,17 +282,17 @@ display:block;
     margin: 0 auto;
     cursor: pointer;
     letter-spacing: 0.06em;
-    color: var(--white-text
-    );
+    color: var(--white-text);
+    background-color: #2196F3;
 }
-.div-modal-btn-close{
+.div-modal-bth-close{
     position: absolute;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color:var(--team-bg);
+    background-color:var(--white-text);
     cursor: pointer;
     border: 1px solid #1e1e1e10 ;
 }
@@ -301,12 +301,12 @@ display:block;
     width: 11px;
     height: 11px;
 }
-.div-modal-btn-close:hover{
+.div-modal-svg-close:hover{
     fill: var(--blue-text);
 
 }
 .is-hidden{
-    opacity: none;
+    opacity: 0;
     pointer-events: none;
 }
 .no-scroll {
@@ -375,6 +375,21 @@ font-style: normal;
 font-weight: 700;
 letter-spacing: 1.08px;
 }
+/* .box-list-name{
+    display: block;
+    background-color: #2f2f2f;
+    opacity: 80%;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    position: relative;
+    bottom: 73px;
+}
+.box-name-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+} */
 
 
 .team{
@@ -406,13 +421,14 @@ letter-spacing: 1.08px;
 }
 .conect-list{
     display: flex;
-    padding-left: 390px;
-    margin-top: -140px;
+    margin-left: 100px;
+    
+    
 }
-.social-text{
-    display: block;
-    padding-left: 400px;
-    position: relative;
+.connect-text{
+    padding-left: 100px;
+    
+    
     top: -140px;
     color: var(--white-text);
     font-size: 25px;
@@ -420,11 +436,6 @@ letter-spacing: 1.08px;
     letter-spacing: 0.1px;
     word-wrap:break-word;
     margin-bottom: 20px;
-}
-.social-img{
-    width: 50px;
-    height: 50px;
-    margin: 5px;
 }
 
 
@@ -495,6 +506,12 @@ border: 2px solid none;
    }
 .footer{
     padding: 60px 0;
+    background-color: #2F303A;
+    display: flex;
+}
+.footer .container{
+    display: flex;
+    position: relative;
 }
 
 .footer-logo-web {
@@ -524,21 +541,15 @@ address{
     gap:9px;
 }
 .social-img{
-    justify-content: space-around;
-    display: inline-flex;
-    align-items: center;
-    background-color:#1E1E1E;
-    font-size: 40px;
+    background-color: #ffffff10;
   width: 50px;
   height:50px;
   margin: 5px;
-    border: none;
-    fill: #AFB1B8;
+    fill: #ffffff;
     border-radius: 50%;
-   justify-content: center;
     padding: 10px;
-    position: relative;
     border: none;
+    margin-bottom: 20px;
 }
 .social-img:hover{
     background-color: var(--blue-text);
@@ -562,8 +573,4 @@ address{
     line-height: 1.71;
     letter-spacing: 0.42px;
     word-wrap: break-word;
-}
-.hero,
-footer {
-    background-color: #2F303A;
 }
