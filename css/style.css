@@ -202,7 +202,7 @@ display:block;
     flex-direction: column;
     margin-bottom: 20px;
 }
-.modal-list-label{
+.modal-list-name{
     letter-spacing: 0.01em;
     color: var(--gray-text);
     padding-right: 7px;
@@ -223,7 +223,7 @@ display:block;
 .modal-svg{
     width: 15px;
     height: 15px;
-    position: absolute;
+    position: relative;
     left: 12px;
     top: 31px;
 }
@@ -422,6 +422,7 @@ letter-spacing: 1.08px;
 .conect-list{
     display: flex;
     margin-left: 100px;
+    gap: 10px;
     
     
 }
@@ -544,12 +545,9 @@ address{
     background-color: #ffffff10;
   width: 50px;
   height:50px;
-  margin: 5px;
     fill: #ffffff;
     border-radius: 50%;
     padding: 10px;
-    border: none;
-    margin-bottom: 20px;
 }
 .social-img:hover{
     background-color: var(--blue-text);
