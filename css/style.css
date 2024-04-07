@@ -76,14 +76,13 @@ align-items: center;
 .contact-img{
     margin-right: 8px;
 }
+.contact-img:hover{
+    fill:#2196F3;
+}
 
 .contact-list-item:hover{
     background-color: var(--blue-back);
     color: #2196F3;
-}
-
-.contact-img{
-    padding-right: 1px;
 }
 
 .header-logo-link {
@@ -206,7 +205,7 @@ display:block;
     letter-spacing: 0.01em;
     color: var(--gray-text);
     padding-right: 7px;
-    position: relative;
+    
     font-size: 12px;
 
 }
@@ -225,7 +224,7 @@ display:block;
     height: 15px;
     position: relative;
     left: 12px;
-    top: 31px;
+    top: -27px;
 }
 .modal-list-input:hover{
     border-color: var(--blue-text);
@@ -375,7 +374,7 @@ font-style: normal;
 font-weight: 700;
 letter-spacing: 1.08px;
 }
-/* .box-list-name{
+ .box-list-name{
     display: block;
     background-color: #2f2f2f;
     opacity: 80%;
@@ -389,7 +388,8 @@ letter-spacing: 1.08px;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #ffffff;
-} */
+    text-align: center;
+} 
 
 
 .team{

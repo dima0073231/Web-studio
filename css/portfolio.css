@@ -71,6 +71,16 @@ ul,h1,h2,h6,p,h3,button{
         display: flex;
         gap: 50px;
 }
+.contact-list-item:hover{
+    background-color: var(--blue-back);
+    color: #2196F3;
+}
+.contact-img{
+    margin-right: 8px;
+}
+.contact-img:hover{
+    fill: #2196F3;
+}
 
 .navigation {
     color: var(--gray-text);
@@ -202,8 +212,19 @@ footer {
 
 .portfolio-filters-btn:hover {
     background-color: var(--blue-back);
-    color: #2196F3;
+    color: blue;
     box-shadow: 0 3px rgba(50, 50, 50, 0.3);
+}
+.social-img{
+    background-color: #ffffff10;
+  width: 50px;
+  height:50px;
+    fill: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.social-img:hover{
+    background-color: var(--blue-text);
 }
 
 .portfolio-list {
