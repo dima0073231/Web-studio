@@ -76,12 +76,14 @@ align-items: center;
 .contact-img{
     margin-right: 10px;
     vertical-align: middle;
-    fill: #757575;
+    
 }
 
-.contact-img:hover .contact-link{
+.contact-list-item:hover .contact-img {
     fill:#2196F3;
+
 }
+
 
 .header-logo-link {
     color:var(--blue-text);
@@ -507,17 +509,20 @@ border: 2px solid none;
     align-items: center;
     
 }
+.company-svg{
+   display: flex; 
+}
 .company-box-img{
     width: 170px;
-    height: 93px;
-    border-radius: 5px;
+    height: 92px;
+    border-radius: 4px;
     fill: #AFB1B8;
     background-color:#ffffff; 
-    padding:20px 10px; 
-    border: 2px solid #AFB1B8;
-    font-size: 50px;
-    margin-left: 30px;
+    padding:20px 60px; 
+    border: 1px solid #AFB1B8;
     cursor: pointer;
+    
+    
 }
    .company-box-img:hover{
     border:2px solid #2196F3;
