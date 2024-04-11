@@ -83,7 +83,7 @@
                 <ul class="modal-list">
                     <li class="modal-list-item">
                         <label for="name" class="modal-list-name">Ім'я
-                        <input type="name" class="modal-list-input">
+                        <input type="text" class="modal-list-input">
                         <a class="modal-svg">
                         <svg class="modal-svg">
                             <use href="./images/symboldefs.svg#name"></use>
@@ -91,13 +91,13 @@
                     </label>
                 </a>
                     </li>
-                        <li class="modal-list-item">
-                            <label for="phone" class="modal-list-name">Телефон
-                            <input type="phone" class="modal-list-input">
-                            <svg class="modal-svg">
-                                <use href="./images/symboldefs.svg#phone"></use>
-                            </svg>
-                        </label>
+                    <li class="modal-list-item">
+                        <label for="tel" class="modal-list-name">Телефон
+                        <input type="tel" class="modal-list-input">
+                        <svg class="modal-svg">
+                            <use href="./images/symboldefs.svg#phone"></use>
+                        </svg>
+                    </label>
                                 <li class="modal-list-item">
                                     <label for="email" class="modal-list-name">Пошта
                                     <input type="email" class="modal-list-input">
@@ -107,7 +107,7 @@
                                 </label>
                                     <li class="modal-list-item">
                                         <label for="com" class="modal-list-name">Коментар
-                                        <textarea name="text" id="comment" placeholder="Введіть текст" class="modal-textarea"></textarea>
+                                        <textarea  id="comment" placeholder="Введіть текст" class="modal-textarea"></textarea>
                                     </label>
                                     </li>
                                 </ul>
@@ -452,6 +452,17 @@
                 </li>
              </ul>
             </section>
+            <section class="footer-right">
+                <h3 class="footer-right-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+                <form class="footer-right-form">
+                    <input type="email" placeholder="E-mail" class="footer-right-input">
+                    <button type="submit" class="footer-right-btn">ПІДПИСАТИСЯ
+                        <svg class="footer-right-svg">
+                            <use href="./images/symboldefs.svg#tg"></use>
+                        </svg>
+                    </button>
+                </form>
+                </section>
             </div>
         </div>
     </footer>
