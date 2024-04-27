@@ -76,9 +76,6 @@ align-items: center;
     vertical-align: middle;
     
 }
-.contact-text{
-
-}
 
 .contact-list-item:hover .contact-img {
     fill:#2196F3;
@@ -130,7 +127,7 @@ align-items: center;
     height: 5px;
     border-radius: 2px;
     left: 0; 
-    transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:hover{
     width: 100%;
