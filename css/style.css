@@ -260,7 +260,7 @@ display:block;
     margin-top: 4px;
     outline: none;
     cursor: pointer;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-coor 250ms cubic-bezier(0.4, 0, 0.2, 1), fill  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .modal-svg{
@@ -272,11 +272,11 @@ display:block;
 }
 .modal-list-input:hover{
     border-color: var(--blue-text);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-list-input:hover + .modal-svg{
     fill: var(--blue-text);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea{
     resize: none;
@@ -340,7 +340,7 @@ display:block;
     background-color:var(--white-text);
     cursor: pointer;
     border: 1px solid #1e1e1e10 ;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .div-modal-svg-close{
     fill: var(--gray-text);
@@ -349,7 +349,7 @@ display:block;
 }
 .div-modal-svg-close:hover{
     fill: var(--blue-text);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .is-hidden{
@@ -547,9 +547,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic
 .company-svg{
    display: flex; 
 }
-.company-list-item{
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .company-box-img{
     width: 170px;
     height: 92px;
@@ -559,13 +557,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic
     padding:20px 60px; 
     border: 1px solid #AFB1B8;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
 }
    .company-box-img:hover{
     border:2px solid #2196F3;
     fill: #2196F3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
    }
 .footer{
     padding: 60px 0;
