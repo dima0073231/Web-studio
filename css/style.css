@@ -76,6 +76,9 @@ align-items: center;
     vertical-align: middle;
     
 }
+.contact-text{
+
+}
 
 .contact-list-item:hover .contact-img {
     fill:#2196F3;
@@ -118,38 +121,35 @@ align-items: center;
     gap: 50px;
 } 
 .navigation-link::after{
-    position: relative;
     content: "";
+    position: relative;
     top: 29px;
-    opacity: 0;
     display: block;
    border-bottom: 6px solid var(--blue-text);
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 0px;
-    height: 2px;
-    border-radius: 2px; 
+    height: 5px;
+    border-radius: 2px;
+    left: 0; 
+    transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:hover{
     width: 100%;
     color: #2196F3;
-    
 }
 .navigation-list-item:hover .navigation-link:after{
     content: "";
    width: 100%;
    color: #2196F3;
-   opacity: 1;
    
 }
 
 .navigation-link {
-    overflow: hidden;
     position: relative;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
     word-wrap: break-word;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .current::after{
@@ -164,6 +164,7 @@ align-items: center;
     left: 0px;
     top: 24px;
 }
+
 
 .contact-block {
 
@@ -223,7 +224,7 @@ display:block;
 }
 .modal {
     transform: translate(-2%, -1%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     width: 528px;
     padding: 40px;
