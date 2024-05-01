@@ -70,6 +70,8 @@ ul,h1,h2,h6,p,h3,button{
 .contact-list-item{
     display: flex;
 align-items: center;
+animation-name:rotateInDownRight;
+animation-duration: 1s;
 }
 .contact-img{
     margin-right: 10px;
@@ -491,6 +493,9 @@ letter-spacing: 1.08px;
    
     padding-left: 23px;
     margin-top: 10px;
+    animation-name: rotateInUpLeft;
+    animation-duration: 5s;
+
 }
 .conect-list{
     display: flex;
@@ -759,13 +764,25 @@ address{
     border: 0;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
+
+@keyframes btn{
+ 
+    0%{
+     transform: translate(0);
+    }
+    100%{
+     transform: translateY(-30px);
+    }
+}
+
 
 .portfolio-filters-btn:hover {
     border-color: var(--blue-text);
     background-color: var(--blue-text);
    color: var(--white-text);
-   animation: jumpbtn 1s ease infinite alternate;
+   animation: btn 1s ease infinite alternate;
 
    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
    
