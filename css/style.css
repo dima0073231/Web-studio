@@ -85,7 +85,7 @@ animation-duration: 1s;
 
 .contact-text:hover .contact-img {
     fill: #2196F3;
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .contact-list-item:hover{
@@ -446,26 +446,34 @@ font-style: normal;
 font-weight: 700;
 letter-spacing: 1.08px;
 }
- .box-list-name{
-    position: relative;
-    display: block;
-    background-color: #2f2f2f;
-    opacity: 80%;
-    width: 370px;
-    height: 70px;
-    padding-top: 27px;
-    position: relative;
-    bottom: 73px;
+ 
+.box-list-item{
+   width:370px;
+   height:294px;
+   position: relative;
+
 }
-.box-name-text{
-    position: absolute;
-    font-size: 14px;
-    color: var(--team-bg);
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-left: 110px;
-} 
+.section-box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.box-list-item::after{
+    content: "";
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 70px;
+   background-color: #2f303a80;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--white-text);
+
+}
+
 
 
 .team{
