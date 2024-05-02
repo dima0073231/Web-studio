@@ -32,6 +32,10 @@ ul,h1,h2,h6,p,h3,button{
     padding:0;
     margin:0;
 }
+button{
+    border: none;
+
+}
 .header .container {
     display: flex;
     justify-content:space-between;
@@ -126,32 +130,12 @@ animation-duration: 1s;
 .navigation-list{
     display: flex;
     gap: 50px;
-} 
-.navigation-link::after{
-    content: "";
-    position: relative;
-    top: 29px;
-    display: block;
-   border-bottom: 6px solid var(--blue-text);
-    width: 0px;
-    height: 5px;
-    border-radius: 2px;
-    left: 0; 
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:hover{
-    width: 100%;
     color: #2196F3;
-}
-.navigation-list-item:hover .navigation-link:after{
-    content: "";
-   width: 100%;
-   color: #2196F3;
-   
 }
 
 .navigation-link {
-    position: relative;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -159,31 +143,40 @@ animation-duration: 1s;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-/* .current::after{
-    content: "";
-    position: relative;
-    display: block;
+.current{
     color: var(--blue-text);
+    position: relative;
+}
+ .current::after{
+    content: "";
+    position: absolute;
+   display: block;
     height: 5px;
     width: 100%;
-    background:var(--blue-text);
+    background-color:var(--blue-text);
     border-radius: 2px;
     left: 0px;
-    top: 24px;
+    bottom: -33px;
+}
+.other{
+    position: relative;
 }
 .other::after{
     content: "";
-    position: relative;
-    top: 35px;
-    display: block;
-   border-bottom: 6px solid var(--blue-text);
-    width: 0px;
+    position: absolute;
+    bottom: -33px;
+   display: block;
+   background-color: var(--blue-text);
+    width: 0;
     height: 5px;
     border-radius: 2px;
     left: 0; 
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-} */
+}
+.other:hover::after{
+    width: 100%;
+} 
 
 
 .contact-block {
@@ -463,16 +456,29 @@ letter-spacing: 1.08px;
     content: "";
    position: absolute;
    bottom: 0;
+   left: 0;
    width: 100%;
    height: 70px;
    background-color: #2f303a80;
 font-size: 14px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-text-align: center;
 color: var(--white-text);
-
+display: flex;
+justify-content: center;
+align-items: center;
 }
+.box-list-item:nth-child(1)::after{
+    content: "Десктопні додатки";
+}
+.box-list-item:nth-child(2)::after{
+    content: "Мобільні додатки";
+}
+.box-list-item:nth-child(3)::after{
+    content: "Дизайнерські рішення";
+}
+
+
 
 
 
@@ -511,22 +517,18 @@ color: var(--white-text);
 }
 .conect-list{
     display: flex;
-    margin-left: 100px;
     gap: 10px;
     
     
 }
 .connect-text{
-    padding-left: 100px;
-    
-    
-    top: -140px;
     color: var(--white-text);
-    font-size: 25px;
     font-weight: 700;
-    letter-spacing: 0.1px;
+font-size: 14px;
+    letter-spacing: 0.03px;
     word-wrap:break-word;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 
@@ -618,6 +620,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic
     position: relative;
     
 }
+.footer-left{
+    margin-right:95px;
+}
+.footer-container{
+    margin-right: 90px;
+    padding-top: 15px;
+}
 
 .footer-logo-web {
     color: var(--blue-text);
@@ -649,7 +658,7 @@ address{
 .social-img{
    width: 20px;
    height: 20px;
-   background-size: 44px;
+   fill: #fff;
 }
 .social-svg{
     background-color: #ffffff10;
@@ -660,7 +669,6 @@ address{
     height: 44px;
     border: 2px solid none;
     border-radius: 50%;
-    fill: #FFF;
 }
 .social-svg:hover{
     background-color: var(--blue-text);
@@ -690,14 +698,14 @@ address{
     word-wrap: break-word;
     top: -80px;
 }
+.footer-right{
+    padding-top: 15px;
+}
 .footer-right-form{
     display: flex;
     align-items: flex-end;
-    padding-left: 400px;
 }
 .footer-right-title{
-    padding-left: 400px;
-    margin-top: -86px;
  font-size: 14px;
     letter-spacing: 0.03em;
     text-transform:uppercase ;
